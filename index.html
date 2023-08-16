@@ -22,14 +22,14 @@
                 <li>
                   <select name="offer" id="offer">
                     <option value="offer" selected disabled>Oferta</option>
-                    <option value="projects">Projekty</option>
-                    <option value="visualization">Wizualizacje</option>
-                    <option value="realization">Realizacje</option>
+                    <option value="projects" id="dropdown__to__projects">Projekty</option>
+                    <option value="visualization" id="dropdown__visuals">Wizualizacje</option>
+                    <option value="realization" id="dropdown__realizations">Realizacje</option>
                   </select>
                 </li>
-                <li><a href="#" class="home">O firmie</a></li>
-                <li><a href="#" class="about">Realizacje</a></li>
-                <li><a href="#" class="apart">Kontakt</a></li>
+                <li><a href="#" class="home" id="nav__about">O firmie</a></li>
+                <li><a href="#" class="about" id="nav__projects">Realizacje</a></li>
+                <li><a href="#" class="apart" id="nav__contact">Kontakt</a></li>
               </ul>
             </div>
             <div class="search">
@@ -60,7 +60,7 @@
                       Skontaktuj się z nami
                     </button>
                     <div class="ghost__buton">
-                      <span>Zobacz nasze realizacje</span>
+                      <span id="main__projects">Zobacz nasze realizacje</span>
                       <img
                         src="images/icons/arrow__small.png"
                         alt="arrow down"
@@ -94,7 +94,7 @@
                 <div class="cards__cont"></div>
               </div>
             </section>
-            <section>
+            <section id="about__section">
               <div class="about__cont">
                 <div class="about__left"></div>
                 <div class="about__right">
@@ -113,7 +113,7 @@
                       współczesnego trybu życia.
                     </p>
                     <div class="ghost__buton" id="ghost__button__light">
-                        <span>Poznaj nas bliżej</span>
+                        <span id="about__button">Poznaj nas bliżej</span>
                         <img
                           src="images/icons/arrow__small.png"
                           alt="arrow down"
@@ -123,7 +123,7 @@
                 </div>
               </div>
             </section>
-            <section>
+            <section id="projects__section">
               <div class="projects__cont">
                 <div class="projects__name">
                   <span>Realizacje</span>
@@ -142,7 +142,7 @@
                       </div>
               </div>
             </section>
-            <section>
+            <section id="contact__section">
               <div class="contact__cont">
                 <div class="contact__cont__left">
                   <h2>Zostańmy w kontakcie!</h2>
