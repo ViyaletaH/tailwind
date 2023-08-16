@@ -1,4 +1,6 @@
 import { cards } from "./data/cards";
+import { projects } from "./data/projects";
+import Masonry from 'masonry-layout';
 
 (function() {
     const container = document.querySelector('.cards__cont');
@@ -36,4 +38,28 @@ import { cards } from "./data/cards";
         }
     }
     loadCards(cards);
+})();
+
+(function() {
+    const container = document.querySelector('.projects');
+
+    function loadProjects(projects) {
+        for (let i = 0; i < projects.length; i++) {
+            const project = document.createElement("div");
+            project.classList.add("project__card");
+            container.appendChild(project);
+            project.style.backgroundImage = `url(${projects[i].img})`; 
+
+            const name = document.createElement("span");
+            name.classList.add("project__name");
+            project.appendChild(name);
+            name.innerHTML = projects[i].name;
+        }
+        const masonry = new Masonry(container, {
+            itemSelector: '.project__card',
+            columnWidth: '.project__card',
+            gutter: 10,
+        });
+    }
+    loadProjects(projects);
 })();
