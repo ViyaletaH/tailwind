@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="dist/styles.css" />
     <link rel="icon" href="images/icons/realizations.png" />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/4.2.2/masonry.pkgd.min.js"></script>
     <title>Website</title>
   </head>
   <body>
@@ -57,7 +56,7 @@
                     indywidualnym podejściem do każdego projektu.
                   </p>
                   <div class="slider__left__buttons">
-                    <button class="contact__button">
+                    <button class="contact__button" id="contact__header">
                       Skontaktuj się z nami
                     </button>
                     <div class="ghost__buton">
@@ -151,7 +150,7 @@
                 </div>
                 <div class="contact__cont__right">
                   <span>Śledź nasze najnowsze realizacje!</span>
-                  <button>Instagram</button>
+                  <button id="inst__btn">Instagram</button>
                 </div>
               </div>
             </section>
@@ -169,30 +168,31 @@
                 />
                 <div class="footer__contact__cont">
                   <span>Daj znać, co możemy dla Ciebie zrobić!</span>
-                  <button class="contact__button">Skontaktuj się z nami</button>
+                  <button class="contact__button" id="contact__button">Skontaktuj się z nami</button>
                 </div>
               </div>
               <div class="separator"></div>
               <div class="footer__contact__links">
-                <li><a href="#" class="home">Kontakt</a></li>
-                <li><a href="#" class="home">Instagram</a></li>
-                <li><a href="#" class="about">Facebook</a></li>
-                <li><a href="#" class="apart">LinkedIn</a></li>
+                <li id="contact__footer">Kontakt</li>
+                <li><a href="https://www.instagram.com/" class="home">Instagram</a></li>
+                <li><a href="https://www.facebook.com/" class="about">Facebook</a></li>
+                <li><a href="https://www.linkedin.com/" class="apart">LinkedIn</a></li>
                 <span>000-000-000</span>
-                <span>giarddesign@kontakt.pl</span>
+                <span id="email">giarddesign@kontakt.pl</span>
               </div>
             </div>
             <div class="lower">
               <span class="rights">Prawa zastrzeżone © 2022</span>
               <div class="design__author">
                 <span>made by</span>
-                <img src="images/icons/logo.png"/>
+                <img id="logo" src="images/icons/logo.png"/>
               </div>
             </div>
           </div>
         </footer>
       </div>
     </div>
+    <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
     <script type="module" src="script.js"></script>
   </body>
 </html>
