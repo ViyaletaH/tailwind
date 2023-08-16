@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="dist/styles.css" />
+    <link rel="icon" href="images/icons/realizations.png" />
     <title>Website</title>
   </head>
   <body>
@@ -11,112 +12,186 @@
       <div class="container">
         <header>
           <div class="header__cont">
-            <div class="name">
-              <span></span>
-              <span></span>
+            <img
+              src="images/icons/giarddesign.png"
+              class="company__logo"
+              alt="company logo"
+            />
+            <div class="nav">
+              <ul class="navigation">
+                <li>
+                  <select name="offer" id="offer">
+                    <option value="offer" selected disabled>Oferta</option>
+                    <option value="projects">Projekty</option>
+                    <option value="visualization">Wizualizacje</option>
+                    <option value="realization">Realizacje</option>
+                  </select>
+                </li>
+                <li><a href="#" class="home">O firmie</a></li>
+                <li><a href="#" class="about">Realizacje</a></li>
+                <li><a href="#" class="apart">Kontakt</a></li>
+              </ul>
             </div>
-            <div class="nav"></div>
             <div class="search">
-              <input />
-              <img />
+              <input
+                type="text"
+                placeholder="Szukaj..."
+                class="searcherItself"
+                autofocus=""
+                autocomplete="off"
+              />
+              <img src="images/icons/search.png" alt="search icon" />
             </div>
           </div>
         </header>
         <main>
           <div class="main__cont">
-            <div class="slider__cont">
+            <section>
+              <div class="slider__cont">
                 <div class="slider__left">
-                    <h1></h1>
-                    <p></p>
-                    <div class="slider__left__buttons">
-                        <button></button>
-                        <button></button>
+                  <h1>Nowoczesna aranżacja Twojego ogrodu</h1>
+                  <p>
+                    Marka GiardDesign to wieloletnie doświadczenie i wysoka
+                    estetyka realizacji. Oferujemy kompleksowy zakres usług z
+                    indywidualnym podejściem do każdego projektu.
+                  </p>
+                  <div class="slider__left__buttons">
+                    <button class="contact__button">
+                      Skontaktuj się z nami
+                    </button>
+                    <div class="ghost__buton">
+                      <span>Zobacz nasze realizacje</span>
+                      <img
+                        src="images/icons/arrow__small.png"
+                        alt="arrow down"
+                      />
                     </div>
+                  </div>
                 </div>
                 <div class="slider__right">
-                    <div class="slider__right__buttons"></div>
-                </div>
-            </div>
-            <div class="offer__cont">
-              <div class="offer__text__name">
-                <div class="offer__name">
-                  <span></span>
-                  <h2></h2>
-                </div>
-                <p></p>
-              </div>
-              <div class="cards__cont">
-
-              </div>
-            </div>
-            <div class="about__cont">
-              <div class="about__left"></div>
-              <div class="about__right">
-                <div class="about__info">
-                  <div class="about__name">
-                    <span></span>
-                    <h2></h2>
+                  <div class="slider__right__buttons">
+                    <div class="arrow" id="arrow__left"></div>
+                    <div class="arrow" id="arrow__right"></div>
                   </div>
-                  <p></p>
-                  <button></button>
                 </div>
               </div>
-            </div>
-            <div class="projects__cont">
-              <div class="projects__name">
-                <span></span>
-                <h2></h2>
+            </section>
+            <section>
+              <div class="offer__cont">
+                <div class="offer__text__name">
+                  <div class="offer__name">
+                    <span>Oferta</span>
+                    <h2>Działamy <i>kompleksowo</i></h2>
+                  </div>
+                  <p>
+                    Oferujemy kompletną obsługę inwestycji terenów zielonych.
+                    Projektujemy nowoczesne ogrody przydomowe oraz
+                    rezydencjonalne. Stworzymy dla Ciebie projekt,
+                    zwizualizujemy go i wcielimy w życie, a na każdym etapie
+                    posłużymy radą i wieloletnim doświadczeniem.
+                  </p>
+                </div>
+                <div class="cards__cont"></div>
               </div>
-              <div class="projects">
-                <div class="projects__light"></div>
+            </section>
+            <section>
+              <div class="about__cont">
+                <div class="about__left"></div>
+                <div class="about__right">
+                  <div class="about__info">
+                    <div class="about__name">
+                      <span>O firmie</span>
+                      <h2>Tworzymy z <i>pasją</i></h2>
+                    </div>
+                    <p>
+                      Każdy projekt to nowe wyzwanie. Dlatego nasz zespół tworzą
+                      wykwalifikowani projektanci oraz architekci, których
+                      zadaniem jest rozpoznanie i realizacja potrzeb każdego
+                      Klienta. Nasza specjalizacja to przestrzenie nowoczesne,
+                      które charakteryzuje minimalizm, geometria i elegancka
+                      prostota. Tworzymy ogrody małoobsługowe, dostosowane do
+                      współczesnego trybu życia.
+                    </p>
+                    <div class="ghost__buton" id="ghost__button__light">
+                        <span>Poznaj nas bliżej</span>
+                        <img
+                          src="images/icons/arrow__small.png"
+                          alt="arrow down"
+                        />
+                      </div>
+                  </div>
+                </div>
               </div>
-              <button></button>
-            </div>
-            <div class="contact__cont">
-              <div class="contact__cont__left">
-                <h2></h2>
-                <span></span>
+            </section>
+            <section>
+              <div class="projects__cont">
+                <div class="projects__name">
+                  <span>Realizacje</span>
+                  <h2>Nasze <i>projekty</i></h2>
+                </div>
+                <div class="projects">
+
+                  <div class="projects__light"></div>
+                </div>
+                <div class="ghost__buton" id="ghost__button__dark">
+                        <span>Rozwiń</span>
+                        <img
+                          src="images/icons/arrow__small.png"
+                          alt="arrow down"
+                        />
+                      </div>
               </div>
-              <div class="contact__cont__right">
-                <span></span>
-                <button></button>
+            </section>
+            <section>
+              <div class="contact__cont">
+                <div class="contact__cont__left">
+                  <h2>Zostańmy w kontakcie!</h2>
+                  <span>Znajdziesz nas na <i>Instagramie</i>.</span>
+                </div>
+                <div class="contact__cont__right">
+                  <span>Śledź nasze najnowsze realizacje!</span>
+                  <button>Instagram</button>
+                </div>
               </div>
-            </div>
+            </section>
           </div>
         </main>
         <footer>
           <div class="footer__cont">
             <div class="upper">
               <div class="footer__contact">
-                <div class="name">
-                  <span></span>
-                  <span></span>
-                </div>
+                <img
+                  src="images/icons/giarddesign.png"
+                  class="company__logo"
+                  id="company__logo__light"
+                  alt="company logo"
+                />
                 <div class="footer__contact__cont">
-                  <span></span>
-                  <button></button>
+                  <span>Daj znać, co możemy dla Ciebie zrobić!</span>
+                  <button class="contact__button">Skontaktuj się z nami</button>
                 </div>
               </div>
               <div class="separator"></div>
               <div class="footer__contact__links">
-                <a></a>
-                <a></a>
-                <a></a>
-                <a></a>
-                <span></span>
-                <span></span>
+                <li><a href="#" class="home">Kontakt</a></li>
+                <li><a href="#" class="home">Instagram</a></li>
+                <li><a href="#" class="about">Facebook</a></li>
+                <li><a href="#" class="apart">LinkedIn</a></li>
+                <span>000-000-000</span>
+                <span>giarddesign@kontakt.pl</span>
               </div>
             </div>
             <div class="lower">
-              <span class="rights"></span>
+              <span class="rights">Prawa zastrzeżone © 2022</span>
               <div class="design__author">
-                <span></span>
-                <img />
+                <span>made by</span>
+                <img src="images/icons/logo.png"/>
               </div>
             </div>
           </div>
         </footer>
       </div>
     </div>
+    <script type="module" src="script.js"></script>
   </body>
 </html>
