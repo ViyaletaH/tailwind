@@ -4,44 +4,50 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="build/styles.css" />
+    <link rel="stylesheet" href="./styles.css" />
     <link rel="icon" href="images/icons/realizations.png" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <title>Website</title>
   </head>
   <body>
-    <div class="wrapper">
+    <div class="wrapper w-screen h-screen overflow-x-hidden">
       <div class="container">
         <header>
-          <div class="header__cont">
+          <div class="header__cont flex justify-between items-center">
             <img
               src="images/icons/giarddesign.png"
               class="company__logo"
               alt="company logo"
             />
-            <div class="nav">
-              <ul class="navigation">
-                <li>
-                  <select name="offer" id="offer">
+            <div id="nav__search" class="nav__search flex justify-between">
+            <div id="nav" class="nav m-0 p-0 items-start">
+              <ul class="navigation flex flex-row w-full h-full items-center justify-between">
+                <li class="text-xs">
+                  <select name="offer" id="offer" class="dropdown text-xs">
                     <option value="offer" selected disabled>Oferta</option>
                     <option value="projects" id="dropdown__to__projects">Projekty</option>
                     <option value="visualization" id="dropdown__visuals">Wizualizacje</option>
                     <option value="realization" id="dropdown__realizations">Realizacje</option>
                   </select>
                 </li>
-                <li><a href="#" class="home" id="nav__about">O firmie</a></li>
-                <li><a href="#" class="about" id="nav__projects">Realizacje</a></li>
-                <li><a href="#" class="apart" id="nav__contact">Kontakt</a></li>
+                <li><a href="#" class="home text-xs" id="nav__about">O firmie</a></li>
+                <li><a href="#" class="about text-xs" id="nav__projects">Realizacje</a></li>
+                <li><a href="#" class="apart text-xs" id="nav__contact">Kontakt</a></li>
               </ul>
             </div>
-            <div class="search">
+            <div class="search flex flex-row justify-between items-center">
               <input
                 type="text"
                 placeholder="Szukaj..."
-                class="searcherItself"
+                class="searcherItself w-0 h-0 outline-none rounded-2xl"
                 autofocus=""
                 autocomplete="off"
+                id="search__input"
               />
-              <img src="images/icons/search.png" alt="search icon" />
+              <img src="images/icons/search.png" alt="search icon" id="search__icon" class="search__icon cursor-pointer"/>
             </div>
+          </div>
           </div>
         </header>
         <main>

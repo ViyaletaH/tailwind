@@ -61,6 +61,17 @@ document.addEventListener("DOMContentLoaded", () => {
   const navProjects = document.getElementById("nav__projects");
   const navContact = document.getElementById("nav__contact");
   const mainProjects = document.getElementById("main__projects");
+  const searchInput = document.getElementById("search__input");
+  const searchIcon = document.getElementById("search__icon");
+  const navSearch = document.getElementById("nav__search");
+  const nav = document.getElementById("nav");
+
+  const broadenSearch = () => {
+    searchInput.classList.toggle("wide");
+    navSearch.classList.toggle("between");
+    nav.classList.toggle("slide");
+  };
+  searchIcon.addEventListener("click", broadenSearch);
 
   logo.addEventListener("click", () => linkOpen("https://adrespect.pl/"));
   inst.addEventListener("click", () => linkOpen("https://www.instagram.com/"));
