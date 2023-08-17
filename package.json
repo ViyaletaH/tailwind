@@ -5,11 +5,13 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "postcss styles.css -o build/styles.css"
+    "build": "postcss styles.css -o build/styles.css",
+    "postinstall": "jspm install"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "jspm": "^3.0.2",
     "sass": "^1.65.1",
     "tailwindcss": "^3.3.3"
   },
@@ -18,5 +20,11 @@
     "masonry-layout": "^4.2.2",
     "postcss-cli": "^10.1.0",
     "watch": "^0.13.0"
-  }
+  },
+  "jspm": {
+    "directories": {
+      "baseURL": "tailwind",
+      "packages": "jspm_packages"
+    }
+}
 }

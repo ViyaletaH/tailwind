@@ -1,23 +1,5 @@
 import { cards } from "./data/cards.js";
 import { projects } from "./data/projects.js";
-// import Masonry from 'masonry-layout';
-
-const logo = document.getElementById("logo");
-const inst = document.getElementById("inst__btn");
-const visual = document.getElementById("1");
-const real = document.getElementById("2");
-const dropVisual = document.getElementById("1");
-const dropReal = document.getElementById("dropdown__realizations");
-const contactFooter = document.getElementById("contact__footer");
-const contactHeader = document.getElementById("contact__header");
-const email = document.getElementById("email");
-const contactBtn = document.getElementById("contact__button");
-const offerProjectBtn = document.getElementById("0");
-const dropProjects = document.getElementById("dropdown__to__projects");
-const navAbout = document.getElementById("nav__about");
-const navProjects = document.getElementById("nav__projects");
-const navContact = document.getElementById("nav__contact");
-const mainProjects = document.getElementById("main__projects");
 
 (function () {
   const container = document.querySelector(".cards__cont");
@@ -63,6 +45,23 @@ const linkOpen = (link) => {
 };
 
 document.addEventListener("DOMContentLoaded", () => {
+  const logo = document.getElementById("logo");
+  const inst = document.getElementById("inst__btn");
+  const visual = document.getElementById("1");
+  const real = document.getElementById("2");
+  const dropVisual = document.getElementById("1");
+  const dropReal = document.getElementById("dropdown__realizations");
+  const contactFooter = document.getElementById("contact__footer");
+  const contactHeader = document.getElementById("contact__header");
+  const email = document.getElementById("email");
+  const contactBtn = document.getElementById("contact__button");
+  const offerProjectBtn = document.getElementById("0");
+  const dropProjects = document.getElementById("dropdown__to__projects");
+  const navAbout = document.getElementById("nav__about");
+  const navProjects = document.getElementById("nav__projects");
+  const navContact = document.getElementById("nav__contact");
+  const mainProjects = document.getElementById("main__projects");
+
   logo.addEventListener("click", () => linkOpen("https://adrespect.pl/"));
   inst.addEventListener("click", () => linkOpen("https://www.instagram.com/"));
   real.addEventListener("click", () => linkOpen("https://www.instagram.com/"));
@@ -125,11 +124,6 @@ document.addEventListener("DOMContentLoaded", () => {
       project.appendChild(name);
       name.innerHTML = projects[i].name;
     }
-    // const masonry = new Masonry(container, {
-    //     itemSelector: '.project__card',
-    //     columnWidth: '.project__card',
-    //     gutter: 10,
-    // });
   }
   loadProjects(projects);
 })();
