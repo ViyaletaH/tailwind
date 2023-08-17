@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build:css": "tailwindcss build styles.css -o dist/styles.css"
+    "build": "postcss styles.css -o build/styles.css"
   },
   "author": "",
   "license": "ISC",
@@ -14,6 +14,9 @@
     "tailwindcss": "^3.3.3"
   },
   "dependencies": {
-    "masonry-layout": "^4.2.2"
+    "autoprefixer": "^10.4.15",
+    "masonry-layout": "^4.2.2",
+    "postcss-cli": "^10.1.0",
+    "watch": "^0.13.0"
   }
 }
