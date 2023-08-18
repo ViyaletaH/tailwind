@@ -544,10 +544,6 @@ video {
   margin: 0px;
 }
 
-.mb-14 {
-  margin-bottom: 3.5rem;
-}
-
 .flex {
   display: flex;
 }
@@ -641,22 +637,9 @@ video {
   padding: 0px;
 }
 
-.text-5xl {
-  font-size: 3rem;
-  line-height: 1;
-}
-
 .text-xs {
   font-size: 0.75rem;
   line-height: 1rem;
-}
-
-.font-medium {
-  font-weight: 500;
-}
-
-.tracking-tighter {
-  letter-spacing: -0.05em;
 }
 
 .outline-none {
@@ -778,9 +761,7 @@ input::placeholder {
   margin-right: 12%;
 }
 
-*/
-
-#h1 {
+h1 {
   margin-top: 7.5rem;
   font-size: 50px;
   margin-left: 4.5rem;
@@ -796,7 +777,7 @@ input::placeholder {
   margin-left: 4.5rem;
   margin-right: 8rem;
   font-size: 13px;
-  margin-bottom: 3.5rem;
+  margin-bottom: 3.7rem;
 }
 
 #contact__header {
