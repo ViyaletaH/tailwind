@@ -36,6 +36,11 @@
   width: 85%;
 }
 
+li:hover {
+  color: #1B5B31;
+  font-weight: 600;
+}
+
 .dropdown {
   width: 60px;
 }
@@ -217,5 +222,37 @@ h1 {
 
 .offer__cont {
   background-color: #F5F0EC;
-  padding-top: 10rem;
+  padding-top: 6rem;
+  font-family: 'Inter', sans-serif;
+}
+
+h2 {
+  font-family: 'Montserrat', sans-serif;
+}
+
+i {
+  font-family: 'Inter', sans-serif;
+  letter-spacing: 0.5px;
+}
+
+.section__span {
+  font-size: 9px;
+  color: #1B5B31;
+  margin-bottom: 0.5rem;
+}
+
+#offer__h2 {
+  font-size: 38px;
+  font-weight: 500;
+  line-height: 54px;
+  letter-spacing: -1px;
+  margin-bottom: 1.3rem;
+}
+.offer__text__name {
+  margin-left: 10.1rem;
+}
+
+#offer__text {
+  font-size: 13px;
+  margin-right: 24rem;
 }
