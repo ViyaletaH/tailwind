@@ -256,3 +256,76 @@ i {
   font-size: 13px;
   margin-right: 24rem;
 }
+
+.cards__cont {
+  margin-top: 4.7rem;
+  padding-left: 4%;
+  padding-right: 4%;
+  margin-bottom:  7.9rem;
+}
+
+.card {
+  width: 304px;
+  height: 296px;
+  background-color: #ffffff;
+  border-radius: 20px;
+  padding-left: 2.1rem;
+  padding-top: 2.3rem;
+}
+
+.card__icon {
+  width: 42px;
+  height: 36px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin-bottom: 1.4rem;
+}
+
+.card__name {
+  font-size: 23px;
+}
+
+.card__text {
+  margin-top: 0.4rem;
+  font-size: 11px;
+  padding-right: 10%;
+}
+
+.card__button {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+  font-size: 13px;
+  margin-top: 3.1rem;
+  color: #1B5B31;
+  width: fit-content;
+  border-bottom: 1px solid #1B5B31;
+  cursor: pointer;
+}
+
+.btn__arrow {
+  width: 14px;
+  height: 14px;
+  transform: rotate(-90deg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin-left: 6px;
+}
+
+.card__button:hover {
+  font-weight: 600;
+  border-bottom-width: 3px;
+}
+
+.card__button:active {
+  
+}
+
+.card:hover {
+  background-color: #4aff896a;
+}
+
+.card:active {
+
+}

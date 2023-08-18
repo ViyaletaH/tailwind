@@ -13,7 +13,7 @@ import { projects } from "./data/projects.js";
       const icon = document.createElement("div");
       icon.classList.add("card__icon");
       card.appendChild(icon);
-      icon.style.backgroundImage = cards[i];
+      icon.style.backgroundImage = cards[i].img;
 
       const name = document.createElement("span");
       name.classList.add("card__name");
