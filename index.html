@@ -24,7 +24,7 @@
             <div id="nav" class="nav m-0 p-0 items-start">
               <ul class="navigation flex flex-row w-full h-full items-center justify-between">
                 <li class="text-xs">
-                  <select name="offer" id="offer" class="dropdown text-xs">
+                  <select name="offer" id="offer" class="dropdown text-xs cursor-pointer">
                     <option value="offer" selected disabled>Oferta</option>
                     <option value="projects" id="dropdown__to__projects">Projekty</option>
                     <option value="visualization" id="dropdown__visuals">Wizualizacje</option>
@@ -51,33 +51,44 @@
           </div>
         </header>
         <main>
-          <div class="main__cont">
             <section>
-              <div class="slider__cont">
-                <div class="slider__left">
-                  <h1 class="text-4xl">Nowoczesna aranżacja Twojego ogrodu</h1>
-                  <p>
+              <div class="slider__cont h-fit flex flex-row">
+                <div class="slider__left flex flex-col justify-around items-center">
+                  <h1>Nowoczesna aranżacja<br>Twojego ogrodu</h1>
+                  <p id="slider__text">
                     Marka GiardDesign to wieloletnie doświadczenie i wysoka
-                    estetyka realizacji. Oferujemy kompleksowy zakres usług z
+                    estetyka realizacji. Oferujemy kompleksowy zakres usług<br>z
                     indywidualnym podejściem do każdego projektu.
                   </p>
-                  <div class="slider__left__buttons">
-                    <button class="contact__button" id="contact__header">
+                  <div class="slider__left__buttons flex flex-row justify-between w-full">
+                    <button class="contact__button flex items-center justify-center" id="contact__header">
                       Skontaktuj się z nami
                     </button>
-                    <div class="ghost__buton">
+                    <div class="ghost__buton flex flex-row justify-around items-center">
                       <span id="main__projects">Zobacz nasze realizacje</span>
                       <img
                         src="images/icons/arrow__small.png"
                         alt="arrow down"
+                        width="13"
+                        id="slider__down"              
                       />
                     </div>
                   </div>
                 </div>
-                <div class="slider__right">
+                <div class="slider__right flex flex-row items-end justify-end">
                   <div class="slider__right__buttons">
-                    <div class="arrow" id="arrow__left"></div>
-                    <div class="arrow" id="arrow__right"></div>
+                    <div class="arrow" id="arrow__left"><img
+                      src="images/icons/arrow__small.png"
+                      alt="arrow down"
+                      width="13"
+                      id="slider__down"              
+                    /></div>
+                    <div class="arrow" id="arrow__right"><img
+                      src="images/icons/arrow__small.png"
+                      alt="arrow down"
+                      width="13"
+                      id="slider__down"              
+                    /></div>
                   </div>
                 </div>
               </div>
@@ -160,7 +171,6 @@
                 </div>
               </div>
             </section>
-          </div>
         </main>
         <footer>
           <div class="footer__cont">
