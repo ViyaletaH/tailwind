@@ -376,3 +376,26 @@ i {
   margin-right: 12%;
   width: 88%;
 }
+
+.projects__cont {
+  background-color: #DCC1AB;
+}
+
+.projects__name {
+  margin-left: 8.2rem;
+  margin-top: 5.9rem;
+}
+
+#realization__span {
+  font-size: 10px;
+}
+
+#projects__h2 {
+  font-size: 38px;
+  font-weight: 500;
+  line-height: 46px;
+  letter-spacing: -1px;
+  margin-bottom: 1.8rem;
+  margin-top: 0.3rem;
+  margin-bottom: 4.6rem;
+}
