@@ -6,58 +6,57 @@ export const projects = [
   },
   {
     name: "Project name",
-    picture: "url(images/photos/2.png)",
+    picture: "url(images/photos/4.png)",
     number: 1,
   },
   {
     name: "Project name",
-    picture: "url(images/photos/3.png)",
+    picture: "url(images/photos/7.png)",
     number: 2,
   },
   {
     name: "Project name",
-    picture: "url(images/photos/4.png)",
+    picture: "url(images/photos/12.png)",
     number: 3,
   },
   {
     name: "Project name",
-    picture: "url(images/photos/5.png)",
+    picture: "url(images/photos/2.png)",
     number: 4,
   },
   {
     name: "Project name",
-    picture: "url(images/photos/6.png)",
+    picture: "url(images/photos/5.png)",
     number: 5,
   },
   {
     name: "Project name",
-    picture: "url(images/photos/7.png)",
+    picture: "url(images/photos/8.png)",
     number: 6,
   },
   {
     name: "Project name",
-    picture: "url(images/photos/8.png)",
+    picture: "url(images/photos/11.jpg)",
     number: 7,
   },
   {
     name: "Project name",
-    picture: "url(images/photos/9.png)",
+    picture: "url(images/photos/3.png)",
     number: 8,
   },
   {
     name: "Project name",
-    picture: "url(images/photos/10.jpg)",
+    picture: "url(images/photos/6.png)",
     number: 9,
   },
   {
     name: "Project name",
-    picture: "url(images/photos/11.jpg)",
+    picture: "url(images/photos/9.png)",
     number: 10,
   },
-  ,
   {
     name: "Project name",
-    picture: "url(images/photos/12.png)",
+    picture: "url(images/photos/10.jpg)",
     number: 11,
-  },
+  }
 ];

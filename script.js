@@ -65,6 +65,32 @@ document.addEventListener("DOMContentLoaded", () => {
   const searchIcon = document.getElementById("search__icon");
   const navSearch = document.getElementById("nav__search");
   const nav = document.getElementById("nav");
+  const project = document.querySelector(".project__card");
+  const section = document.querySelector(".projects__section");
+  const wrapper = document.querySelector(".wrapper");
+
+  project.addEventListener("click", () => {
+    const cardOpen = document.createElement("div");
+    cardOpen.classList.add("cardOpen");
+    cardOpen.innerHTML = project.innerHTML;
+    section.appendChild(cardOpen);
+
+    const name = document.createElement("span");
+    name.classList.add("project__name");
+    cardOpen.appendChild(name);
+    name.innerHTML = projects[i].name;
+
+    if (section.contains(cardOpen)) {
+      const darkenedCover = document.createElement("div");
+      darkenedCover.classList.add("darkenedCover");
+      wrapper.appendChild(darkenedCover);
+
+      darkenedCover.addEventListener("click", () => {
+        wrapper.removeChild(darkenedCover);
+        section.removeChild(cardOpen);
+      });
+    }
+  });
 
   const broadenSearch = () => {
     searchInput.classList.toggle("wide");
@@ -124,16 +150,12 @@ document.addEventListener("DOMContentLoaded", () => {
   const container = document.querySelector(".projects");
 
   function loadProjects(projects) {
-    for (let i = 0; i < projects.length; i++) {
+    for (let i = 0; i < projects.length ; i++) {
       const project = document.createElement("div");
       project.classList.add("project__card");
+      project.id = `project${projects[i].number}`;
       container.appendChild(project);
       project.style.backgroundImage = projects[i].picture;
-
-      const name = document.createElement("span");
-      name.classList.add("project__name");
-      project.appendChild(name);
-      name.innerHTML = projects[i].name;
     }
   }
   loadProjects(projects);
