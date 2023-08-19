@@ -68,6 +68,19 @@ document.addEventListener("DOMContentLoaded", () => {
   const project = document.querySelector(".project__card");
   const section = document.querySelector(".projects__section");
   const wrapper = document.querySelector(".wrapper");
+  const openProjects = document.getElementById("ghost__button__dark");
+  const light = document.querySelector(".projects__light");
+  const project7 = document.getElementById('project7');
+  const project3 = document.getElementById('project3');
+  const project11 = document.getElementById('project11');
+
+
+  openProjects.onclick = () => {
+    project7.style.height = '272px';
+    project3.style.height = '482px';
+    project11.style.height = '482px';
+    light.style.visibility = 'hidden';
+  }
 
   project.addEventListener("click", () => {
     const cardOpen = document.createElement("div");
@@ -150,7 +163,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const container = document.querySelector(".projects");
 
   function loadProjects(projects) {
-    for (let i = 0; i < projects.length ; i++) {
+    for (let i = 0; i < projects.length; i++) {
       const project = document.createElement("div");
       project.classList.add("project__card");
       project.id = `project${projects[i].number}`;
