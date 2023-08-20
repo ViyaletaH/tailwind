@@ -130,7 +130,7 @@ h1 {
   margin-bottom: 3.7rem;
 }
 
-#contact__header {
+#contact__header, #contact__footer {
   background-color: #1B5B31;
   border-radius: 20px;
   font-family: 'Inter', sans-serif;
@@ -542,4 +542,67 @@ i {
 
 #inst__btn:active {
   background-color: #b6b6b6;
+}
+
+.footer__cont {
+  background-color: #111;
+  color: #F5F0EC;
+  font-size: 12px;
+  font-family: 'Inter', sans-serif;
+  padding-top: 4rem;
+}
+
+#company__logo__light {
+  filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(0deg);
+}
+
+.separator {
+  background-color: #F5F0EC;
+  height: 1px;
+}
+
+.footer__contact, .lower__contact, .separator, .lower {
+  width: 72%;
+}
+
+#contact__footer {
+  margin-left: 1.3rem;
+}
+
+#footer__span {
+  font-size: 12.5px;
+}
+
+.separator {
+  margin-top: 3rem;
+  margin-bottom: 2.5rem;
+}
+
+#navigation__footer {
+  margin-top: 0.6rem;
+  width: 19rem;
+}
+
+.lower__contact {
+  font-size: 11px;
+  margin-bottom: 6rem;
+}
+
+.number__email {
+  padding-top: 0.7rem;
+}
+
+#email {
+  margin-left: 2.4rem;
+}
+
+.lower {
+  margin-left: 14%;
+  font-size: 12.5px;
+  margin-bottom: 4rem;
+}
+
+#logo {
+  margin-left: 12px;
+  height: 19px;
 }

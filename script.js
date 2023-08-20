@@ -79,6 +79,7 @@ document.addEventListener("DOMContentLoaded", () => {
     project7.style.height = '272px';
     project3.style.height = '482px';
     project11.style.height = '482px';
+    project11.style.marginBottom = '15rem';
     light.style.visibility = 'hidden';
   }
 

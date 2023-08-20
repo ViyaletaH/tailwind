@@ -258,43 +258,65 @@
           </section>
         </main>
         <footer>
-          <div class="footer__cont">
-            <div class="upper">
-              <div class="footer__contact">
+          <div class="footer__cont flex flex-col justify-between">
+            <div class="upper flex flex-col justify-between items-center">
+              <div
+                class="footer__contact flex flex-row items-center justify-between"
+              >
                 <img
                   src="images/icons/giarddesign.png"
                   class="company__logo"
                   id="company__logo__light"
                   alt="company logo"
                 />
-                <div class="footer__contact__cont">
-                  <span>Daj znać, co możemy dla Ciebie zrobić!</span>
-                  <button class="contact__button" id="contact__button">
+                <div
+                  class="footer__contact__cont flex flex-row items-center justify-between"
+                >
+                  <span id="footer__span"
+                    >Daj znać, co możemy dla Ciebie zrobić!</span
+                  >
+                  <button
+                    class="contact__button flex items-center justify-center"
+                    id="contact__footer"
+                  >
                     Skontaktuj się z nami
                   </button>
                 </div>
               </div>
               <div class="separator"></div>
-              <div class="border border-solid border-crimson">
-                <li id="contact__footer">Kontakt</li>
-                <li>
-                  <a href="https://www.instagram.com/" class="home"
-                    >Instagram</a
-                  >
-                </li>
-                <li>
-                  <a href="https://www.facebook.com/" class="about">Facebook</a>
-                </li>
-                <li>
-                  <a href="https://www.linkedin.com/" class="apart">LinkedIn</a>
-                </li>
-                <span>000-000-000</span>
-                <span id="email">giarddesign@kontakt.pl</span>
+              <div
+                class="lower__contact flex flex-row items-center justify-between"
+              >
+                <ul
+                  id="navigation__footer"
+                  class="navigation flex flex-row w-full h-full items-center justify-between"
+                >
+                  <li id="contact">Kontakt</li>
+                  <li>
+                    <a href="https://www.instagram.com/" class="home"
+                      >Instagram</a
+                    >
+                  </li>
+                  <li>
+                    <a href="https://www.facebook.com/" class="about"
+                      >Facebook</a
+                    >
+                  </li>
+                  <li>
+                    <a href="https://www.linkedin.com/" class="apart"
+                      >LinkedIn</a
+                    >
+                  </li>
+                </ul>
+                <div class="number__email flex flex-row items-center justify-betweenfy">
+                  <span>000-000-000</span>
+                  <span id="email">giarddesign@kontakt.pl</span>
+                </div>
               </div>
             </div>
-            <div class="lower">
+            <div class="lower flex flex-row items-center justify-between">
               <span class="rights">Prawa zastrzeżone © 2022</span>
-              <div class="design__author">
+              <div class="design__author flex flex-row items-center justify-between">
                 <span>made by</span>
                 <img id="logo" src="images/icons/logo.png" />
               </div>
