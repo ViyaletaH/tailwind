@@ -140,6 +140,28 @@ document.addEventListener("DOMContentLoaded", () => {
         const main = document.getElementById("wrapper");
         main.appendChild(cardOpen);
 
+        const left = document.createElement("span");
+        left.classList.add("left__modal");
+        left.innerHTML = '⮜';
+        cardOpen.appendChild(left);
+
+        const right = document.createElement("span");
+        right.classList.add("right__modal");
+        right.innerHTML = '⮞';
+        cardOpen.appendChild(right);
+
+        let currentIndex = i;
+
+        right.onclick = () => {
+          currentIndex = ( currentIndex + 1) % projects.length; 
+          cardOpen.style.backgroundImage = projects[currentIndex].picture;
+        }
+        
+        left.onclick = () => {
+          currentIndex = (currentIndex - 1 + projects.length) % projects.length;
+          cardOpen.style.backgroundImage = projects[currentIndex].picture;
+        }
+
         if (main.contains(cardOpen)) {
           const darkenedCover = document.createElement("div");
           darkenedCover.classList.add("darkenedCover");
