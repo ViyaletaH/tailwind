@@ -608,3 +608,15 @@ i {
   margin-left: 12px;
   height: 19px;
 }
+
+#phone {
+  cursor: pointer;
+}
+
+#contact__footer:hover {
+  background-color: #257942;
+}
+
+#contact__footer:active {
+  background-color: #0e3b1e;
+}

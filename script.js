@@ -184,3 +184,10 @@ offerSelect.addEventListener("change", () => {
     scrollToSection("projects");
   }
 });
+
+const phone = document.getElementById("phone");
+
+phone.addEventListener("click", () => {
+  const phoneNumber = phone.innerHTML.match(/\d+/)[0];
+  window.location.href = `tel:${phoneNumber}`;
+});
