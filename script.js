@@ -240,6 +240,17 @@ const picture = document.getElementById("slider__right__part");
 const leftArr = document.getElementById("left__arrow");
 const rightArr = document.getElementById("right__arrow");
 
+function addTransition () {
+  picture.classList.add("fade-transition");
+  text.classList.add("fade-transition");
+  header.classList.add("fade-transition");
+  setTimeout(() => {
+    picture.classList.remove("fade-transition");
+    text.classList.remove("fade-transition");
+    header.classList.remove("fade-transition");
+  }, 700);
+}
+
 function loadSlider(cards) {
   let currentIndex = 0;
 
@@ -248,6 +259,7 @@ function loadSlider(cards) {
     picture.style.backgroundImage = cards[currentIndex].picture;
     text.innerHTML = cards[currentIndex].text;
     header.innerHTML = cards[currentIndex].name;
+    addTransition();
   };
 
   leftArr.onclick = () => {
@@ -255,6 +267,10 @@ function loadSlider(cards) {
     picture.style.backgroundImage = cards[currentIndex].picture;
     text.innerHTML = cards[currentIndex].text;
     header.innerHTML = cards[currentIndex].name;
+    picture.classList.remove("fade-transition");
+    text.classList.remove("fade-transition");
+    header.classList.remove("fade-transition");
+    addTransition();
   };
 
   header.innerHTML = cards[0].name;

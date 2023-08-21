@@ -670,3 +670,21 @@ i {
   align-items: center;
   border: solid 1px #257942;
 }
+/* 
+#slider__right__part, #slider__text, h1 {
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+} */
+
+.fade-transition{
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
