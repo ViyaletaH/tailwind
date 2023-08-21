@@ -132,6 +132,25 @@ document.addEventListener("DOMContentLoaded", () => {
       project.id = `project${projects[i].number}`;
       container.appendChild(project);
       project.style.backgroundImage = projects[i].picture;
+
+      project.addEventListener("click", () => {
+        const cardOpen = document.createElement("div");
+        cardOpen.classList.add("cardOpen");
+        cardOpen.style.backgroundImage = project.style.backgroundImage;
+        const main = document.getElementById("wrapper");
+        main.appendChild(cardOpen);
+
+        if (main.contains(cardOpen)) {
+          const darkenedCover = document.createElement("div");
+          darkenedCover.classList.add("darkenedCover");
+          main.appendChild(darkenedCover);
+
+          darkenedCover.addEventListener("click", () => {
+            main.removeChild(darkenedCover);
+            main.removeChild(cardOpen);
+          });
+        }
+      });
     }
   }
   loadProjects(projects);

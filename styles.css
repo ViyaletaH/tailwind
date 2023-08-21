@@ -620,3 +620,27 @@ i {
 #contact__footer:active {
   background-color: #0e3b1e;
 }
+
+.cardOpen {
+  z-index: 100;
+  position: absolute;
+  width: 50%;
+  height: 75%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-color: #111;
+  background-position: center;
+  border-radius: 20px;
+}
+
+#wrapper {
+  z-index: 90;
+}
+
+.darkenedCover {
+  background-color: #5a5a5a5b;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 95;
+}
