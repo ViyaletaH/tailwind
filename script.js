@@ -49,18 +49,10 @@ document.addEventListener("DOMContentLoaded", () => {
   const inst = document.getElementById("inst__btn");
   const visual = document.getElementById("1");
   const real = document.getElementById("2");
-  const dropVisual = document.getElementById("1");
-  const dropReal = document.getElementById("dropdown__realizations");
   const contactFooter = document.getElementById("contact__footer");
   const contactHeader = document.getElementById("contact__header");
   const email = document.getElementById("email");
-  const contactBtn = document.getElementById("contact__button");
-  const offerProjectBtn = document.getElementById("0");
-  const dropProjects = document.getElementById("dropdown__to__projects");
-  const navAbout = document.getElementById("nav__about");
-  const navProjects = document.getElementById("nav__projects");
-  const navContact = document.getElementById("nav__contact");
-  const mainProjects = document.getElementById("main__projects");
+  const contactBtn = document.getElementById("contact");
   const searchInput = document.getElementById("search__input");
   const searchIcon = document.getElementById("search__icon");
   const navSearch = document.getElementById("nav__search");
@@ -70,18 +62,17 @@ document.addEventListener("DOMContentLoaded", () => {
   const wrapper = document.querySelector(".wrapper");
   const openProjects = document.getElementById("ghost__button__dark");
   const light = document.querySelector(".projects__light");
-  const project7 = document.getElementById('project7');
-  const project3 = document.getElementById('project3');
-  const project11 = document.getElementById('project11');
-
+  const project7 = document.getElementById("project7");
+  const project3 = document.getElementById("project3");
+  const project11 = document.getElementById("project11");
 
   openProjects.onclick = () => {
-    project7.style.height = '272px';
-    project3.style.height = '482px';
-    project11.style.height = '482px';
-    project11.style.marginBottom = '15rem';
-    light.style.visibility = 'hidden';
-  }
+    project7.style.height = "272px";
+    project3.style.height = "482px";
+    project11.style.height = "482px";
+    project11.style.marginBottom = "15rem";
+    light.style.visibility = "hidden";
+  };
 
   project.addEventListener("click", () => {
     const cardOpen = document.createElement("div");
@@ -119,12 +110,6 @@ document.addEventListener("DOMContentLoaded", () => {
   visual.addEventListener("click", () =>
     linkOpen("https://www.instagram.com/")
   );
-  dropReal.addEventListener("click", () =>
-    linkOpen("https://www.instagram.com/")
-  );
-  dropVisual.addEventListener("click", () =>
-    linkOpen("https://www.instagram.com/")
-  );
 
   function openEmail() {
     const mailtoLink = "mailto:";
@@ -135,29 +120,6 @@ document.addEventListener("DOMContentLoaded", () => {
   contactHeader.addEventListener("click", () => openEmail());
   contactFooter.addEventListener("click", () => openEmail());
   contactBtn.addEventListener("click", () => openEmail());
-
-  function scrollToSection(sectionId) {
-    const section = document.getElementById(sectionId);
-    section.scrollIntoView({ behavior: "smooth" });
-  }
-
-  offerProjectBtn.addEventListener("click", () =>
-    scrollToSection("projects__section")
-  );
-  dropProjects.addEventListener("click", () =>
-    scrollToSection("projects__section")
-  );
-  navProjects.addEventListener("click", () =>
-    scrollToSection("projects__section")
-  );
-  mainProjects.addEventListener("click", () =>
-    scrollToSection("projects__section")
-  );
-
-  navAbout.addEventListener("click", () => scrollToSection("about__section"));
-  navContact.addEventListener("click", () =>
-    scrollToSection("contact__section")
-  );
 });
 
 (function () {
@@ -174,3 +136,51 @@ document.addEventListener("DOMContentLoaded", () => {
   }
   loadProjects(projects);
 })();
+
+const offerProjectBtn = document.getElementById("0");
+const navAbout = document.getElementById("nav__about");
+const navProjects = document.getElementById("nav__projects");
+const navContact = document.getElementById("nav__contact");
+const mainProjects = document.getElementById("main__projects");
+
+function scrollToSection(sectionId) {
+  const section = document.getElementById(sectionId);
+  if (section) {
+    section.scrollIntoView({ behavior: "smooth" });
+  } else {
+    console.error(`Element with ID '${sectionId}' not found.`);
+  }
+}
+
+offerProjectBtn.addEventListener("click", () =>
+  scrollToSection("projects")
+);
+
+mainProjects.addEventListener("click", () =>
+  scrollToSection("projects")
+);
+
+navAbout.addEventListener("click", (event) => {
+  event.preventDefault();
+  scrollToSection("about__section");
+});
+navContact.addEventListener("click", (event) => {
+  event.preventDefault();
+  scrollToSection("contact__section");
+});
+
+navProjects.addEventListener("click", (event) => {
+  event.preventDefault();
+  scrollToSection("projects");
+});
+
+const offerSelect = document.getElementById("offer");
+
+offerSelect.addEventListener("change", () => {
+  const selectedValue = offerSelect.value;
+  if (selectedValue === "visualization" || selectedValue === "realization") {
+    window.location.href = "https://www.instagram.com/";
+  } else if (selectedValue === "projects__section") {
+    scrollToSection("projects");
+  }
+});

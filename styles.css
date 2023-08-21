@@ -581,6 +581,7 @@ i {
 #navigation__footer {
   margin-top: 0.6rem;
   width: 19rem;
+  cursor: pointer;
 }
 
 .lower__contact {
@@ -594,6 +595,7 @@ i {
 
 #email {
   margin-left: 2.4rem;
+  cursor: pointer;
 }
 
 .lower {
