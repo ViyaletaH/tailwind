@@ -472,6 +472,7 @@ i {
 .projects__light {
   z-index: 60;
   height: 60%;
+  bottom: 0;
   position: absolute;
   background: linear-gradient(to top, #DCC1AB, transparent);
   margin-top: 40%;
@@ -670,11 +671,6 @@ i {
   align-items: center;
   border: solid 1px #257942;
 }
-/* 
-#slider__right__part, #slider__text, h1 {
-  opacity: 0;
-  transition: opacity 0.5s ease-in-out;
-} */
 
 .fade-transition{
   animation: fadeIn 0.5s ease-in-out;
@@ -686,5 +682,234 @@ i {
   }
   to {
     opacity: 1;
+  }
+}
+
+@media (max-width: 1492px) {
+  .project__card {
+    height: 17rem;
+    width: 100%;
+  }
+  
+  .card__open {
+    height: 25rem;
+  }
+  
+  #project0,
+  #project6,
+  #project9 {
+    height: 30rem;
+  }
+  
+  #project1,
+  #project5,
+  #project8 {
+    height:22.6rem;
+  }
+}
+
+@media (max-width: 1149px) {
+  .slider__left__buttons {
+    flex-direction: column;
+    margin-left: 40%;
+    justify-content: space-between;
+
+  }
+  
+  #contact__header {
+    margin-left: 0;
+    margin-bottom: 1rem;
+  }
+
+  .cards__cont {
+    flex-wrap: wrap;
+  }
+
+  .card {
+    margin-bottom: 1rem;
+  }
+
+}
+
+@media (max-width: 990px) {
+  .footer__contact, .lower__contact, .lower {
+    flex-direction: column;
+  }
+
+  #ghost__button__dark {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  #ghost__button__light {
+    margin-top: 1rem;
+  }
+ .about__right {
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-top: 2rem;
+  }
+
+  #offer__text {
+    margin-right: 2rem;
+  }
+
+  .offer__text__name {
+    margin-left: 2rem;
+  }
+
+  .cards__cont {
+    margin-bottom: 2rem;
+  }
+
+  .contact__cont__left {
+    margin-left: 2rem;
+  }
+}
+
+@media (max-width: 815px) {
+  .slider__cont, .about__cont {
+    flex-direction: column;
+  }
+
+  .slider__left, .slider__right, .about__left, .about__right {
+    width: 100%;
+  }
+
+  .about__left, .about__right {
+    height: 22rem;
+  }
+
+  .slider__left {
+    padding-bottom: 2rem;
+  }
+
+  .slider__right {
+    height: 30rem;
+  }
+}
+
+@media (max-width: 690px) {
+  .contact__cont {
+    flex-direction: column;
+    justify-content: space-around;
+    padding-top: 8px;
+  }
+  
+  #project11 {
+    margin-bottom: 5rem !important;
+  }
+  .projects {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .projects__name {
+    margin-left: 4rem;
+  }
+
+  .contact__cont__right {
+    margin-top: 8px;
+    margin-bottom: 8px;
+  }
+
+  #contact__right__span, #inst__btn {
+    margin-right: 0;
+  }
+
+  .about__right {
+    height: 30rem;
+  }
+}
+
+@media (max-width: 548px) {
+  #navigation__footer, .footer__contact__cont, .number__email {
+    flex-direction: column;
+  }
+
+  .header__cont,
+.offer__cont,
+.projects__cont,
+.contact__cont,
+.footer__cont,
+.about__cont {
+  height: fit-content;
+  width: 100%;
+  margin-left: 0%;
+  margin-right: 0%;
+}
+
+.slider__cont {
+  float: none;
+  margin-left: 0;
+  width: 100%;
+}
+
+.about__cont {
+  float: none;
+  margin-right: 0;
+  width: 100%;
+
+}
+
+  #contact__footer {
+    padding: 3px;
+  }
+
+  #email {
+    margin-left: 0;
+  }
+
+  #footer__span {
+    text-align: center;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .projects__name {
+    margin-left: 2rem;
+  }
+
+}
+
+@media (max-width: 394px) {
+  #offer__h2, #contact__h2, .projects__name {
+    font-size: 30px;
+  }
+
+  .contact__cont {
+    height: 20rem;
+  }
+
+  #contact__span {
+    font-size: 18px;
+    margin-right: 1rem;
+  }
+
+  #inst__btn {
+    margin-top: 0.2rem;
+  }
+
+  #h1 {
+    font-size: 32px;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+  }
+
+  #slider__text {
+    margin-left: 2rem;
+    margin-right: 2rem;
+    margin-bottom: 2rem;
+
+  }
+
+  .slider__right {
+    height: 20rem;
+  }
+
+  .about__right {
+    height: 32rem;
   }
 }
