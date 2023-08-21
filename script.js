@@ -1,5 +1,6 @@
 import { cards } from "./data/cards.js";
 import { projects } from "./data/projects.js";
+import { sliderCards } from "./data/sliderCards.js";
 
 (function () {
   const container = document.querySelector(".cards__cont");
@@ -232,3 +233,33 @@ phone.addEventListener("click", () => {
   const phoneNumber = phone.innerHTML.match(/\d+/)[0];
   window.location.href = `tel:${phoneNumber}`;
 });
+
+const header = document.getElementById("h1");
+const text = document.getElementById("slider__text");
+const picture = document.getElementById("slider__right__part");
+const leftArr = document.getElementById("left__arrow");
+const rightArr = document.getElementById("right__arrow");
+
+function loadSlider(cards) {
+  let currentIndex = 0;
+
+  rightArr.onclick = () => {
+    currentIndex = (currentIndex + 1) % cards.length;
+    picture.style.backgroundImage = cards[currentIndex].picture;
+    text.innerHTML = cards[currentIndex].text;
+    header.innerHTML = cards[currentIndex].name;
+  };
+
+  leftArr.onclick = () => {
+    currentIndex = (currentIndex - 1 + cards.length) % cards.length;
+    picture.style.backgroundImage = cards[currentIndex].picture;
+    text.innerHTML = cards[currentIndex].text;
+    header.innerHTML = cards[currentIndex].name;
+  };
+
+  header.innerHTML = cards[0].name;
+  picture.style.backgroundImage = cards[0].picture;
+  text.innerHTML = cards[0].text;
+}
+
+loadSlider(sliderCards);
