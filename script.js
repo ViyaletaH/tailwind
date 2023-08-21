@@ -139,28 +139,30 @@ document.addEventListener("DOMContentLoaded", () => {
         cardOpen.style.backgroundImage = project.style.backgroundImage;
         const main = document.getElementById("wrapper");
         main.appendChild(cardOpen);
+        main.style.justifyContent = "center";
+        main.style.alignItems = "center";
 
         const left = document.createElement("span");
         left.classList.add("left__modal");
-        left.innerHTML = '⮜';
+        left.innerHTML = "⮜";
         cardOpen.appendChild(left);
 
         const right = document.createElement("span");
         right.classList.add("right__modal");
-        right.innerHTML = '⮞';
+        right.innerHTML = "⮞";
         cardOpen.appendChild(right);
 
         let currentIndex = i;
 
         right.onclick = () => {
-          currentIndex = ( currentIndex + 1) % projects.length; 
+          currentIndex = (currentIndex + 1) % projects.length;
           cardOpen.style.backgroundImage = projects[currentIndex].picture;
-        }
-        
+        };
+
         left.onclick = () => {
           currentIndex = (currentIndex - 1 + projects.length) % projects.length;
           cardOpen.style.backgroundImage = projects[currentIndex].picture;
-        }
+        };
 
         if (main.contains(cardOpen)) {
           const darkenedCover = document.createElement("div");
@@ -170,6 +172,8 @@ document.addEventListener("DOMContentLoaded", () => {
           darkenedCover.addEventListener("click", () => {
             main.removeChild(darkenedCover);
             main.removeChild(cardOpen);
+            main.style.justifyContent = "";
+            main.style.alignItems = "";
           });
         }
       });
@@ -193,13 +197,9 @@ function scrollToSection(sectionId) {
   }
 }
 
-offerProjectBtn.addEventListener("click", () =>
-  scrollToSection("projects")
-);
+offerProjectBtn.addEventListener("click", () => scrollToSection("projects"));
 
-mainProjects.addEventListener("click", () =>
-  scrollToSection("projects")
-);
+mainProjects.addEventListener("click", () => scrollToSection("projects"));
 
 navAbout.addEventListener("click", (event) => {
   event.preventDefault();
