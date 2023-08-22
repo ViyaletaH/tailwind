@@ -1,12 +1,340 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="dist/styles.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="build/styles.css" />
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="icon" href="images/icons/realizations.png" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
     <title>Website</title>
-</head>
-<body>
-    
-</body>
+  </head>
+  <body>
+    <div id="wrapper" class="wrapper w-screen h-screen overflow-x-hidden flex">
+      <div class="container">
+        <header>
+          <div class="header__cont flex justify-between items-center">
+            <img
+              src="images/icons/giarddesign.png"
+              class="company__logo"
+              alt="company logo"
+            />
+            <div id="nav__search" class="nav__search flex justify-between">
+              <div id="nav" class="nav m-0 p-0 items-start">
+                <ul id="navigation"
+                  class="navigation flex flex-row w-full h-full items-center justify-between"
+                >
+                  <li class="text-xs">
+                    <select
+                      name="offer"
+                      id="offer"
+                      class="dropdown text-xs cursor-pointer"
+                    >
+                      <option value="offer" selected disabled>Oferta</option>
+                      <option
+                        value="projects__section"
+                        id="dropdown__to__projects"
+                      >
+                        Projekty
+                      </option>
+                      <option value="visualization" id="dropdown__visuals">
+                        Wizualizacje
+                      </option>
+                      <option value="realization" id="dropdown__realizations">
+                        Realizacje
+                      </option>
+                    </select>
+                  </li>
+                  <li>
+                    <a href="#" class="home text-xs" id="nav__about"
+                      >O firmie</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="about text-xs" id="nav__projects"
+                      >Realizacje</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="apart text-xs" id="nav__contact"
+                      >Kontakt</a
+                    >
+                  </li>
+                </ul>
+              </div>
+              <div class="search flex flex-row justify-between items-center">
+                <input
+                  type="text"
+                  placeholder="Szukaj..."
+                  class="searcherItself w-0 h-0 outline-none rounded-2xl"
+                  autofocus=""
+                  autocomplete="off"
+                  id="search__input"
+                />
+                <img
+                  src="images/icons/search.png"
+                  alt="search icon"
+                  id="search__icon"
+                  class="search__icon cursor-pointer"
+                />
+              </div>
+            </div>
+            <div class="hamburger">
+              <span class="line1"></span>
+              <span class="line2"></span>
+              <span class="line3"></span>
+            </div>
+          </div>
+        </header>
+        <main>
+          <section>
+            <div class="slider__cont h-fit flex flex-row w-full">
+              <div
+                class="slider__left flex flex-col justify-around items-center"
+              >
+                <h1 id="h1"></h1>
+                <p id="slider__text"></p>
+                <div
+                  class="slider__left__buttons flex flex-row justify-between w-full"
+                >
+                  <button
+                    class="contact__button flex items-center justify-center"
+                    id="contact__header"
+                  >
+                    Skontaktuj się z nami
+                  </button>
+                  <div
+                    class="ghost__buton flex flex-row justify-around items-center cursor-pointer"
+                  >
+                    <span id="main__projects">Zobacz nasze realizacje</span>
+                    <img
+                      src="images/icons/arrow__small.png"
+                      alt="arrow down"
+                      width="13"
+                      id="slider__down"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div
+                id="slider__right__part"
+                class="slider__right flex flex-row items-end justify-end"
+              >
+                <div
+                  class="slider__right__buttons flex flex-row items-center justify-center"
+                >
+                  <div
+                    id="left__arrow"
+                    class="arrow flex items-center h-full w-full cursor-pointer"
+                  >
+                    <img
+                      src="images/icons/arrow__small.png"
+                      alt="arrow down"
+                      width="20"
+                      id="slider__left"
+                    />
+                  </div>
+                  <div
+                    id="right__arrow"
+                    class="arrow flex items-center h-full w-full cursor-pointer"
+                  >
+                    <img
+                      src="images/icons/arrow__small.png"
+                      alt="arrow down"
+                      width="20"
+                      id="slider__right"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section>
+            <div class="offer__cont flex flex-col h-full">
+              <div class="offer__text__name flex flex-col">
+                <div class="offer__name flex flex-col justify-between">
+                  <span class="section__span">Oferta</span>
+                  <h2 id="offer__h2">Działamy <i>kompleksowo</i></h2>
+                </div>
+                <p id="offer__text">
+                  Oferujemy kompletną obsługę inwestycji terenów zielonych.
+                  Projektujemy nowoczesne ogrody przydomowe oraz
+                  rezydencjonalne. Stworzymy dla Ciebie projekt, zwizualizujemy
+                  go i wcielimy<br />w życie, a na każdym etapie posłużymy radą
+                  i wieloletnim doświadczeniem.
+                </p>
+              </div>
+              <div
+                class="cards__cont flex flex-row items-center justify-around"
+              ></div>
+            </div>
+          </section>
+          <section id="about__section">
+            <div class="about__cont flex flex-row items-center w-full h-fit">
+              <div class="about__left"></div>
+              <div class="about__right">
+                <div class="about__info flex flex-col justify-around">
+                  <div class="about__name">
+                    <span class="section__span" id="about__span">O firmie</span>
+                    <h2 id="about__h2">Tworzymy<br />z <i>pasją</i></h2>
+                  </div>
+                  <p id="about__text">
+                    Każdy projekt to nowe wyzwanie. Dlatego nasz zespół tworzą
+                    wykwalifikowani projektanci oraz architekci, których
+                    zadaniem jest rozpoznanie i realizacja potrzeb każdego
+                    Klienta. Nasza specjalizacja to przestrzenie nowoczesne,
+                    które charakteryzuje minimalizm, geometria i elegancka
+                    prostota. Tworzymy ogrody małoobsługowe, dostosowane do
+                    współczesnego trybu życia.
+                  </p>
+                  <div
+                    class="ghost__buton flex flex-row items-center justify-start"
+                    id="ghost__button__light"
+                  >
+                    <span id="about__button">Poznaj nas bliżej</span>
+                    <img
+                      src="images/icons/arrow__small.png"
+                      alt="arrow down"
+                      id="about__right"
+                      width="13"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section id="projects__section">
+            <div class="projects__cont flex flex-col justify-between">
+              <div class="projects__name flex flex-col justify-between">
+                <span id="realization__span" class="section__span"
+                  >Realizacje</span
+                >
+                <h2 id="projects__h2">Nasze <i>projekty</i></h2>
+              </div>
+              <div class="projects" id="projects">
+                <div
+                  class="projects__light w-full flex justify-center items-end"
+                >
+                  <div
+                    class="ghost__buton flex flex-row justify-between items-center"
+                    id="ghost__button__dark"
+                  >
+                    <span>Rozwiń</span>
+                    <img
+                      src="images/icons/arrow__small.png"
+                      alt="arrow down"
+                      id="projects__down"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section id="contact__section">
+            <div
+              class="contact__cont flex flex-row items-center justify-between"
+            >
+              <div
+                class="contact__cont__left flex flex-col items-start justify-center"
+              >
+                <h2 id="contact__h2">Zostańmy w kontakcie!</h2>
+                <span id="contact__span"
+                  >Znajdziesz nas na <b><i>Instagramie</i></b
+                  >.</span
+                >
+              </div>
+              <div
+                class="contact__cont__right flex flex-col justify-between items-center"
+              >
+                <span id="contact__right__span"
+                  >Śledź nasze<br />
+                  najnowsze realizacje!</span
+                >
+                <button id="inst__btn">Instagram</button>
+              </div>
+            </div>
+          </section>
+        </main>
+        <footer>
+          <div class="footer__cont flex flex-col justify-between">
+            <div class="upper flex flex-col justify-between items-center">
+              <div
+                class="footer__contact flex flex-row items-center justify-between"
+              >
+                <img
+                  src="images/icons/giarddesign.png"
+                  class="company__logo"
+                  id="company__logo__light"
+                  alt="company logo"
+                />
+                <div
+                  class="footer__contact__cont flex flex-row items-center justify-between"
+                >
+                  <span id="footer__span"
+                    >Daj znać, co możemy dla Ciebie zrobić!</span
+                  >
+                  <button
+                    class="contact__button flex items-center justify-center"
+                    id="contact__footer"
+                  >
+                    Skontaktuj się z nami
+                  </button>
+                </div>
+              </div>
+              <div class="separator"></div>
+              <div
+                class="lower__contact flex flex-row items-center justify-between"
+              >
+                <ul
+                  id="navigation__footer"
+                  class="navigation flex flex-row w-full h-full items-center justify-between"
+                >
+                  <li id="contact">Kontakt</li>
+                  <li>
+                    <a href="https://www.instagram.com/" class="home"
+                      >Instagram</a
+                    >
+                  </li>
+                  <li>
+                    <a href="https://www.facebook.com/" class="about"
+                      >Facebook</a
+                    >
+                  </li>
+                  <li>
+                    <a href="https://www.linkedin.com/" class="apart"
+                      >LinkedIn</a
+                    >
+                  </li>
+                </ul>
+                <div
+                  class="number__email flex flex-row items-center justify-betweenfy"
+                >
+                  <span id="phone">000-000-000</span>
+                  <span id="email">giarddesign@kontakt.pl</span>
+                </div>
+              </div>
+            </div>
+            <div class="lower flex flex-row items-center justify-between">
+              <span class="rights">Prawa zastrzeżone © 2022</span>
+              <div
+                class="design__author flex flex-row items-center justify-between"
+              >
+                <span>made by</span>
+                <img id="logo" src="images/icons/logo.png" />
+              </div>
+            </div>
+          </div>
+        </footer>
+      </div>
+    </div>
+    <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+    <script type="module" src="script.js"></script>
+  </body>
 </html>

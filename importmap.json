@@ -1,0 +1,22 @@
+{
+  "env": [
+    "browser",
+    "development",
+    "module"
+  ],
+  "imports": {
+    "masonry": "https://ga.jspm.io/npm:masonry@0.0.2/index.js",
+    "masonry-layout": "https://ga.jspm.io/npm:masonry-layout@4.2.2/masonry.js"
+  },
+  "scopes": {
+    "https://ga.jspm.io/": {
+      "desandro-matches-selector": "https://ga.jspm.io/npm:desandro-matches-selector@2.0.2/matches-selector.js",
+      "ejs": "https://ga.jspm.io/npm:ejs@0.7.1/lib/ejs.js",
+      "ev-emitter": "https://ga.jspm.io/npm:ev-emitter@1.1.1/ev-emitter.js",
+      "fizzy-ui-utils": "https://ga.jspm.io/npm:fizzy-ui-utils@2.0.7/utils.js",
+      "fs": "https://ga.jspm.io/npm:@jspm/core@2.0.1/nodelibs/browser/fs.js",
+      "get-size": "https://ga.jspm.io/npm:get-size@2.0.3/get-size.js",
+      "outlayer": "https://ga.jspm.io/npm:outlayer@2.1.1/outlayer.js"
+    }
+  }
+}

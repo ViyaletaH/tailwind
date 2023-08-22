@@ -5,11 +5,27 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build:css": "tailwindcss build styles.css -o dist/styles.css"
+    "build": "npx tailwind -i ./styles.css -o ./build/styles.css",
+    "postinstall": "jspm install",
+    "watch": "npx tailwind -i ./styles.css -o ./build/styles.css --watch"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "jspm": "^3.0.2",
+    "sass": "^1.65.1",
     "tailwindcss": "^3.3.3"
-  }
+  },
+  "dependencies": {
+    "autoprefixer": "^10.4.15",
+    "masonry-layout": "^4.2.2",
+    "postcss-cli": "^10.1.0",
+    "watch": "^0.13.0"
+  },
+  "jspm": {
+    "directories": {
+      "baseURL": "tailwind",
+      "packages": "jspm_packages"
+    }
+}
 }
